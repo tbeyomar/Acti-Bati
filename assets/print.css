@@ -146,6 +146,24 @@
   [data-url$="roussillon41"] #localisation .g3{margin-top:10px!important}
   #plans .g4 .zoom-wrap img{max-height:56mm}
   #plans [style*="margin-bottom:56px"]{margin-bottom:8px!important}
+  #logistique .g2 .zoom-wrap img{max-height:92mm}
+  #logistique > .g2.rv:nth-of-type(1),#logistique .g2.rv[style*="margin-top:56px"]{margin-top:10px!important}
+  #logistique .g2.rv[style*="margin-top:56px"] .zoom-wrap img{max-height:68mm}
+  #logistique .g2.rv[style*="align-items:start"] .zoom-wrap img{max-height:44mm}
+  #logistique .g2.rv[style*="align-items:start"] img.fi{max-height:62mm}
+  #logistique .g2.rv[style*="align-items:start"]{margin-top:8px!important}
+  #logistique .g2.rv[style*="align-items:start"] .desc{font-size:10pt!important}
+  #logistique .g2.rv[style*="align-items:start"] div[style*="margin-top:24px"]{margin-top:8px!important}
+  #logistique .blist li{padding:1px 0!important;font-size:9pt!important}
+  #logistique .bat-head{margin-top:6px!important;padding-top:6px!important}
+  #logistique .bat-name{font-size:20pt!important}
+  #logistique div[style*="padding:36px"]{padding:8px 14px!important;margin-top:10px!important}
+  #logistique div[style*="padding:36px"] .c-ey{margin-bottom:4px!important}
+  #logistique .card-white{padding:7px 12px!important}
+  #logistique .stat-row{margin-top:10px!important}
+  #logistique .stat-item{padding:7px 10px!important}
+  #logistique .g3.rv[style*="margin-top:32px"]{margin-top:8px!important}
+  #logistique [style*="grid-template-columns:1fr 1.25fr"] .zoom-wrap img{max-height:70mm}
   #dispos .blist{columns:3;column-gap:24px;margin-top:8px!important}
   #dispos table td{padding:4px 9px!important}
   #dispos .stat-item{padding:8px 10px!important}
