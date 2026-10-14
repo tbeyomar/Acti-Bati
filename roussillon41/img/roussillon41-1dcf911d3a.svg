@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" font-family="Arial, Helvetica, sans-serif">
+<defs><pattern id="mz" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#f3d9d6"/><line x1="0" y1="0" x2="0" y2="10" stroke="#e3b1ab" stroke-width="3"/></pattern></defs>
+<rect width="1000" height="760" fill="#fff"/>
+<rect x="200" y="60" width="600" height="520" fill="#F8F6F3" stroke="#0D1B2A" stroke-width="8"/>
+<rect x="204" y="64" width="592" height="90" fill="url(#mz)"/><line x1="204" y1="154" x2="796" y2="154" stroke="#C8352A" stroke-width="3" stroke-dasharray="12 6"/>
+<text x="500" y="105" text-anchor="middle" font-size="20" font-weight="800" fill="#C8352A">MEZZANINE — 119 m²</text><text x="500" y="132" text-anchor="middle" font-size="14" fill="#8a4a44">bureaux · vestiaire · stockage léger</text>
+<rect x="230" y="190" width="220" height="150" fill="none" stroke="#5C7A9C" stroke-width="2" stroke-dasharray="6 5"/><text x="340" y="272" text-anchor="middle" font-size="15" fill="#5C7A9C" font-weight="700">ZONE MACHINES</text>
+<rect x="560" y="190" width="210" height="270" fill="none" stroke="#5C7A9C" stroke-width="2" stroke-dasharray="6 5"/>
+<rect x="580" y="205" width="170" height="30" fill="#dfe5ec"/>
+<rect x="580" y="255" width="170" height="30" fill="#dfe5ec"/>
+<rect x="580" y="305" width="170" height="30" fill="#dfe5ec"/>
+<rect x="580" y="355" width="170" height="30" fill="#dfe5ec"/>
+<rect x="580" y="405" width="170" height="30" fill="#dfe5ec"/>
+<text x="665" y="480" text-anchor="middle" font-size="15" fill="#5C7A9C" font-weight="700">STOCK / RAYONNAGES</text>
+<text x="370" y="420" text-anchor="middle" font-size="26" font-weight="900" fill="#0D1B2A">ATELIER</text><text x="370" y="450" text-anchor="middle" font-size="17" fill="#555">660 m² de plain-pied</text>
+<rect x="310" y="572" width="180" height="16" fill="#C8352A"/><text x="400" y="612" text-anchor="middle" font-size="13" fill="#C8352A" font-weight="700">PORTE SECTIONNELLE</text>
+<rect x="640" y="572" width="44" height="16" fill="#0D1B2A"/><text x="662" y="612" text-anchor="middle" font-size="13" fill="#0D1B2A" font-weight="700">ACCÈS</text>
+<g transform="translate(335,630)"><rect width="130" height="62" rx="10" fill="#fff" stroke="#0D1B2A" stroke-width="3"/><rect x="92" y="6" width="32" height="50" rx="6" fill="#dfe5ec"/><text x="50" y="38" text-anchor="middle" font-size="12" fill="#0D1B2A">utilitaire</text></g>
+<rect x="560" y="630" width="52" height="90" fill="none" stroke="#b3aea6" stroke-width="2"/>
+<rect x="620" y="630" width="52" height="90" fill="none" stroke="#b3aea6" stroke-width="2"/>
+<rect x="680" y="630" width="52" height="90" fill="none" stroke="#b3aea6" stroke-width="2"/>
+<rect x="740" y="630" width="52" height="90" fill="none" stroke="#b3aea6" stroke-width="2"/>
+<text x="668" y="742" text-anchor="middle" font-size="13" fill="#888">stationnement au droit de la cellule</text>
+<text x="180" y="330" text-anchor="end" font-size="14" fill="#888" transform="rotate(-90 180 330)">cellule mitoyenne</text><text x="830" y="330" font-size="14" fill="#888" transform="rotate(90 830 330)">cellule mitoyenne</text>
+<text x="500" y="40" text-anchor="middle" font-size="18" font-weight="800" fill="#0D1B2A">CELLULE TYPE B1 / B2 — 779 m² (660 + 119)</text>
+</svg>
