@@ -74,6 +74,17 @@
     contact.appendChild(po);
   }
 
+
+  // En-tête de couverture pour l'impression (logo + adresse en ligne)
+  if (hero) {
+    var nl = document.querySelector('.nl');
+    var ch = document.createElement('div');
+    ch.className = 'pq-cover-head';
+    ch.innerHTML = '<div class="pq-cover-logo">' + (nl ? nl.innerHTML : '') + '</div>' +
+      '<div class="pq-cover-meta">Plaquette commerciale' + (pageUrl ? '<br><strong>' + pageUrl + '</strong>' : '') + '</div>';
+    hero.insertBefore(ch, hero.firstChild);
+  }
+
   // Images : précharger après l'ouverture pour une impression complète
   function eager() { document.querySelectorAll('img[loading="lazy"]').forEach(function (i) { i.loading = 'eager'; }); }
   addEventListener('load', function () { setTimeout(eager, 2500); });
