@@ -63,3 +63,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset
 @media (max-width:1100px){.nlinks{display:none!important}.burger{display:flex!important}.ncta{display:none!important}}
 @media (max-width:768px){.mob-menu{top:60px}}
 @media (max-width:768px){.pq-nav-right .pq-home{display:none}}
+
+/* Bouton PDF */
+.pq-pdf{margin-right:10px}
+@media (max-width:1180px){.pq-pdf span{display:inline}}

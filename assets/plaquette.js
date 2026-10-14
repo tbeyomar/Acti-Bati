@@ -43,6 +43,42 @@
   addEventListener('resize', onScroll);
   onScroll();
 
+
+  // Bouton PDF (nav + menu mobile) et bloc « version en ligne » pour l'impression
+  var pdf = body.getAttribute('data-pdf');
+  var pageUrl = body.getAttribute('data-url');
+  var DL = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>';
+  if (pdf) {
+    var right = document.querySelector('.pq-nav-right');
+    if (right) {
+      var b = document.createElement('a');
+      b.className = 'pq-home pq-pdf';
+      b.href = pdf;
+      b.setAttribute('download', '');
+      b.setAttribute('aria-label', 'Télécharger la plaquette en PDF');
+      b.innerHTML = DL + '<span>PDF</span>';
+      right.insertBefore(b, right.firstChild);
+    }
+    var m = document.getElementById('mobMenu');
+    if (m) {
+      var mb = document.createElement('a');
+      mb.href = pdf; mb.setAttribute('download', ''); mb.className = 'pq-home-m';
+      mb.textContent = '↓ Télécharger le PDF';
+      m.insertBefore(mb, m.children[1] || null);
+    }
+  }
+  if (contact && pageUrl) {
+    var po = document.createElement('div');
+    po.className = 'pq-print-only';
+    po.innerHTML = 'Plaquette en ligne, plans zoomables et mises à jour : <strong>' + pageUrl + '</strong>';
+    contact.appendChild(po);
+  }
+
+  // Images : précharger après l'ouverture pour une impression complète
+  function eager() { document.querySelectorAll('img[loading="lazy"]').forEach(function (i) { i.loading = 'eager'; }); }
+  addEventListener('load', function () { setTimeout(eager, 2500); });
+  addEventListener('beforeprint', eager);
+
   // Lien actif dans le menu
   var links = Array.prototype.slice.call(document.querySelectorAll('.nlinks a[href^="#"]'));
   var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
