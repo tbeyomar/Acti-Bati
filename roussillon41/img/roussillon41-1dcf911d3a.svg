@@ -12,7 +12,7 @@
 <rect x="580" y="355" width="170" height="30" fill="#dfe5ec"/>
 <rect x="580" y="405" width="170" height="30" fill="#dfe5ec"/>
 <text x="665" y="480" text-anchor="middle" font-size="15" fill="#5C7A9C" font-weight="700">STOCK / RAYONNAGES</text>
-<text x="370" y="420" text-anchor="middle" font-size="26" font-weight="900" fill="#0D1B2A">ATELIER</text><text x="370" y="450" text-anchor="middle" font-size="17" fill="#555">660 m² de plain-pied</text>
+<text x="370" y="420" text-anchor="middle" font-size="26" font-weight="900" fill="#C8352A">ATELIER</text><text x="370" y="452" text-anchor="middle" font-size="19" font-weight="800" fill="#C8352A">660 m² de plain-pied</text>
 <rect x="310" y="572" width="180" height="16" fill="#C8352A"/><text x="400" y="612" text-anchor="middle" font-size="13" fill="#C8352A" font-weight="700">PORTE SECTIONNELLE</text>
 <rect x="640" y="572" width="44" height="16" fill="#0D1B2A"/><text x="662" y="612" text-anchor="middle" font-size="13" fill="#0D1B2A" font-weight="700">ACCÈS</text>
 <g transform="translate(335,630)"><rect width="130" height="62" rx="10" fill="#fff" stroke="#0D1B2A" stroke-width="3"/><rect x="92" y="6" width="32" height="50" rx="6" fill="#dfe5ec"/><text x="50" y="38" text-anchor="middle" font-size="12" fill="#0D1B2A">utilitaire</text></g>
