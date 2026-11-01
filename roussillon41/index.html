@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parc Roussillon S41 — Pla de Salses</title>
-<meta name="description" content="Parc Roussillon S41 à Pla de Salses : 9,7 ha, 34 900 m² de bâtiments d'activités neufs face à l'A9 (sortie 41). Pôle TPE / PME / PMI et pôle logistique. Achat, location ou sur mesure.">
+<meta name="description" content="Parc Roussillon S41 à Pla de Salses : 9,7 ha, 34 900 m² de bâtiments d'activités neufs en vitrine sur l'A9 (sortie 41). Pôle TPE / PME / PMI et pôle logistique. Achat, location ou sur mesure.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Parc Roussillon S41 — Pla de Salses">
-<meta property="og:description" content="Parc Roussillon S41 à Pla de Salses : 9,7 ha, 34 900 m² de bâtiments d'activités neufs face à l'A9 (sortie 41). Pôle TPE / PME / PMI et pôle logistique. Achat, location ou sur mesure.">
+<meta property="og:description" content="Parc Roussillon S41 à Pla de Salses : 9,7 ha, 34 900 m² de bâtiments d'activités neufs en vitrine sur l'A9 (sortie 41). Pôle TPE / PME / PMI et pôle logistique. Achat, location ou sur mesure.">
 <meta property="og:image" content="https://actibati-sud.fr/assets/og-roussillon41.jpg">
 <meta property="og:url" content="https://actibati-sud.fr/roussillon41/">
 <meta name="theme-color" content="#161E24">
@@ -298,6 +298,47 @@ footer a { color:var(--gold); }
 .tr-group td{background:rgba(245,175,60,.08)}
 @media print{.ey-big{font-size:13pt!important}.tr-group td{background:none!important}}
 </style>
+<style>
+/* Section vitrine A9 */
+section.vitrine{position:relative;padding:0!important;min-height:640px;display:flex;align-items:center;overflow:hidden;background:var(--navy);border-top:0}
+.vitrine-media{position:absolute;inset:0}
+.vitrine-media img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;object-position:center 100%;display:block}
+section.vitrine::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(22,30,36,.94) 0%,rgba(22,30,36,.8) 36%,rgba(22,30,36,.1) 60%,rgba(22,30,36,0) 100%)}
+.vitrine-c{position:relative;z-index:2;max-width:640px;padding:110px 60px;color:#fff}
+.vitrine h2{color:#fff}
+.vitrine h2 em{color:var(--gold)}
+.vitrine .ey{color:var(--gold)}
+.vitrine-lead{font-size:18px;line-height:1.75;color:rgba(255,255,255,.88);margin:0}
+.vitrine-points{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:18px}
+.vitrine-points li{border-left:3px solid var(--gold);padding:2px 0 2px 18px}
+.vitrine-points strong{display:block;font-family:var(--serif);font-weight:400;font-size:22px;color:#fff;line-height:1.2;margin-bottom:4px}
+.vitrine-points span{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.75)}
+.vitrine-tag{position:absolute;z-index:3;left:49%;bottom:5%;background:var(--red);color:#fff;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:9px 16px;border-radius:40px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+@media (max-width:900px){
+  section.vitrine{display:block;min-height:0}
+  .vitrine-media{position:relative;height:260px}
+  section.vitrine::after{display:none}
+  .vitrine-c{padding:48px 20px 56px;max-width:none;background:var(--navy)}
+  .vitrine-tag{left:auto;right:16px;bottom:16px;font-size:10px;padding:7px 12px}
+  .vitrine-media img{object-position:center 100%}
+  .vitrine-lead{font-size:16px}
+  .vitrine-points strong{font-size:19px}
+}
+@media print{
+  section.vitrine{display:grid!important;grid-template-columns:1fr 1.15fr;gap:26px;align-items:center;min-height:0;background:#fff!important;padding:2mm 1mm 0!important}
+  section.vitrine::after,.vitrine-tag{display:none!important}
+  .vitrine-media{position:static;order:2}
+  .vitrine-media img{height:auto!important;max-height:120mm;object-fit:contain}
+  .vitrine-c{order:1;padding:0;max-width:none;color:var(--navy);background:none!important}
+  .vitrine h2{color:var(--navy)!important}
+  .vitrine h2 em{color:var(--red)!important}
+  .vitrine .ey{color:var(--red)!important}
+  .vitrine-lead{color:#4a4f5c!important;font-size:11.5pt}
+  .vitrine-points li{border-left-color:var(--red)}
+  .vitrine-points strong{color:var(--navy)!important;font-size:15pt}
+  .vitrine-points span{color:#4a4f5c!important;font-size:10pt}
+}
+</style>
 <link rel="stylesheet" href="../assets/plaquette.css">
 <link rel="stylesheet" href="../assets/print.css">
 </head>
@@ -358,7 +399,7 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
       </div>
       <div class="hstat">
         <div class="v">A9<sup>41</sup></div>
-        <div class="l">Perpignan Nord</div>
+        <div class="l">Vitrine sur l'A9</div>
       </div>
     </div>
   </div>
@@ -380,10 +421,10 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
   <div class="g2" style="margin-top:56px; align-items:center;">
     <div class="rv">
       <div class="zoom-wrap" data-label="Vue aérienne">
-        <img width="1276" height="902" loading="lazy" decoding="async" src="img/roussillon41-000b29baaa.webp" alt="Vue aérienne du Parc Roussillon S41 dans son environnement">
+        <img width="1603" height="864" loading="lazy" decoding="async" src="img/roussillon41-6b61587269.webp" alt="Vue aérienne du Parc Roussillon S41 : les deux pôles">
         <div class="zoom-label">Cliquer pour agrandir</div>
       </div>
-      <p class="ilab">Le Parc Roussillon S41 dans son environnement, face à l'A9 — Document non contractuel</p>
+      <p class="ilab">Le Parc Roussillon S41 : pôle logistique au nord, pôle TPE / PME / PMI au sud — Document non contractuel</p>
     </div>
     <div class="rv">
       <div class="g3" style="grid-template-columns:1fr; margin-top:0; gap:16px;">
@@ -404,6 +445,26 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
 
 
 
+</section>
+
+
+<!-- VITRINE A9 -->
+<section id="vitrine" class="vitrine">
+  <div class="vitrine-media">
+    <img width="1276" height="902" loading="lazy" decoding="async" src="img/roussillon41-000b29baaa.webp" alt="Le Parc Roussillon S41 vu depuis l'A9, au premier plan">
+    <span class="vitrine-tag">A9 · Espagne ↔ Europe</span>
+  </div>
+  <div class="vitrine-c rv">
+    <div class="ey">Effet vitrine</div>
+    <h2>Votre entreprise <em>en vitrine sur l'A9</em></h2>
+    <div class="rline"></div>
+    <p class="vitrine-lead">Le Parc Roussillon S41 se voit depuis l'autoroute. Sur l'axe qui relie la péninsule ibérique au reste de l'Europe, vos bâtiments sont sous les yeux de tous ceux qui passent : votre adresse devient votre meilleure publicité.</p>
+    <ul class="vitrine-points">
+      <li><strong>Une visibilité permanente</strong><span>Votre entreprise vue chaque jour par vos clients, vos fournisseurs et vos futurs collaborateurs, sans campagne publicitaire.</span></li>
+      <li><strong>Une image qui inspire confiance</strong><span>Des bâtiments neufs, architecturés et paysagers, qui valorisent votre activité.</span></li>
+      <li><strong>Une adresse évidente</strong><span>A9, sortie 41 : facile à donner, facile à trouver.</span></li>
+    </ul>
+  </div>
 </section>
 
 <!-- LOCALISATION -->
@@ -475,8 +536,8 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
 
   <div class="g2" style="margin-top:0; align-items:center;">
     <div class="rv">
-      <img width="1603" height="864" loading="lazy" decoding="async" src="img/roussillon41-6b61587269.webp" class="fi" alt="Vue aérienne du Parc Roussillon S41 — toitures photovoltaïques et espaces paysagers">
-      <p class="ilab">Toitures photovoltaïques et espaces paysagers — Document non contractuel</p>
+      <img width="1385" height="779" loading="lazy" decoding="async" src="img/roussillon41-b53b8acede.webp" class="fi" alt="Voirie paysagère et bâtiments neufs du Parc Roussillon S41">
+      <p class="ilab">Voirie paysagère et plantations méditerranéennes — Document non contractuel</p>
     </div>
     <div class="rv">
       <div class="ey">Le Parc Roussillon S41, moderne et arboré</div>
