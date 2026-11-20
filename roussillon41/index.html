@@ -377,6 +377,26 @@ section.vitrine::after{content:"";position:absolute;inset:0;z-index:1;pointer-ev
   .ct-info{margin-top:14px!important}
 }
 </style>
+<style>
+/* Badge ZFRR du hero */
+.hero-zfrr{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;margin:0 auto 40px;padding:10px 22px 10px 10px;border-radius:50px;background:rgba(255,255,255,.1);border:1px solid rgba(245,175,60,.55);backdrop-filter:blur(8px);color:#fff;text-decoration:none;transition:background .25s,border-color .25s,transform .25s}
+.hero-zfrr:hover{background:rgba(255,255,255,.18);border-color:var(--gold);transform:translateY(-2px)}
+.hz-tag{background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:8px 14px;border-radius:40px}
+.hz-txt{font-size:15px;letter-spacing:.3px}
+.hz-txt strong{color:var(--gold);font-weight:700}
+.hz-note{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.55)}
+@media (max-width:768px){
+  .hero-zfrr{flex-direction:column;gap:8px;padding:14px 18px;border-radius:18px;margin-bottom:28px}
+  .hz-txt{font-size:13.5px;text-align:center}
+}
+@media print{
+  .hero-zfrr{display:inline-flex!important;margin:3mm 0 0!important;padding:2mm 4mm 2mm 2mm!important;background:none!important;border:1px solid var(--red)!important;color:var(--navy)!important;backdrop-filter:none!important}
+  .hz-tag{background:var(--red)!important;color:#fff!important;font-size:7.5pt}
+  .hz-txt{font-size:10pt;color:var(--navy)!important}
+  .hz-txt strong{color:var(--red)!important}
+  .hz-note{color:var(--muted)!important;font-size:7pt}
+}
+</style>
 <link rel="stylesheet" href="../assets/plaquette.css">
 <link rel="stylesheet" href="../assets/print.css">
 </head>
@@ -389,10 +409,10 @@ section.vitrine::after{content:"";position:absolute;inset:0;z-index:1;pointer-ev
   </a>
   <ul class="nlinks">
     <li><a href="#programme">Le Parc S41</a></li>
+    <li><a href="#fiscal">Avantages fiscaux</a></li>
     <li><a href="#localisation">Localisation</a></li>
     <li><a href="#artisans">TPE / PME / PMI</a></li>
     <li><a href="#logistique">Logistique</a></li>
-    <li><a href="#fiscal">Acquérir</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="pq-nav-right"><a class="pq-home" href="../" aria-label="Tous les programmes Acti Bati"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span>Programmes</span></a><button class="ncta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Nous contacter</button></div>
@@ -403,10 +423,10 @@ section.vitrine::after{content:"";position:absolute;inset:0;z-index:1;pointer-ev
 <div class="mob-menu" id="mobMenu">
   <a href="../" class="pq-home-m">← Tous les programmes</a>
   <a href="#programme" onclick="closeMenu()">Le Parc S41</a>
+  <a href="#fiscal" onclick="closeMenu()">Avantages fiscaux</a>
   <a href="#localisation" onclick="closeMenu()">Localisation</a>
   <a href="#artisans" onclick="closeMenu()">TPE / PME / PMI</a>
   <a href="#logistique" onclick="closeMenu()">Logistique</a>
-  <a href="#fiscal" onclick="closeMenu()">Acquérir</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 <script>
@@ -422,6 +442,7 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
     <div class="htag">Pla de Salses</div>
     <h1 style="font-size:clamp(34px,5.4vw,78px);">PARC ROUSSILLON <span class="h41">S41</span></h1>
     <p class="hsub"><strong style="color:white; font-weight:800;">Un parc moderne et sécurisé</strong>, au service des entrepreneurs et du territoire</p>
+    <a class="hero-zfrr" href="#fiscal"><span class="hz-tag">Zone ZFRR</span><span class="hz-txt">Jusqu'à <strong>5 ans d'exonération d'impôt</strong> sur les bénéfices</span><span class="hz-note">sous conditions</span></a>
     <div class="hstats">
       <div class="hstat">
         <div class="v">9,7<sup>ha</sup></div>
@@ -502,6 +523,48 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
       <li><strong>Accès immédiat</strong><span>Sortie 41 Perpignan-Nord, entrée du parc à 3 km de l'échangeur, dans les deux sens et sans traverser d'agglomération.</span></li>
       <li><strong>Un cadre d'entreprise soigné</strong><span>Bâtiments neufs, toitures photovoltaïques et aménagements paysagers, dans un site clos et sécurisé.</span></li>
     </ul>
+  </div>
+</section>
+
+<!-- FISCAL & FORMULES -->
+<section id="fiscal" style="background:#fff;">
+  <div style="display:flex; align-items:center; justify-content:flex-end; margin-bottom:8px;"><img width="300" height="249" loading="lazy" decoding="async" src="img/roussillon41-2d8fcd6968.webp" alt="" style="height:44px; width:auto; opacity:0.9;"></div>
+
+  <div class="g2" style="margin-top:0;">
+    <div class="rv">
+      <div class="ey ey-big">Le levier fiscal exceptionnel</div>
+      <h2>Zone France Ruralités <em>Revitalisation</em></h2>
+      <div class="rline"></div>
+      <div style="background:var(--navy); color:white; padding:36px; border-left:4px solid var(--red); border-radius:4px;">
+        <div class="section-badge" style="background:var(--red);">ZFRR</div>
+        <p style="font-size:15px; line-height:1.8; color:rgba(255,255,255,0.9);">Le site est classé en <strong style="color:white;">Zone France Ruralités Revitalisation (ZFRR)</strong>. Les entreprises qui s'y créent ou s'y implantent par reprise jusqu'au 31 décembre 2029 peuvent bénéficier de :</p>
+        <ul class="blist zfrr-list" style="margin-top:14px;">
+          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span><strong style="color:white;">Exonération totale d'impôt sur les bénéfices pendant 5 ans</strong> (impôt sur les sociétés ou sur le revenu)</span></li>
+          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span><strong style="color:white;">Sortie progressive sur 3 ans</strong> : exonération de 75&nbsp;%, puis 50&nbsp;%, puis 25&nbsp;%</span></li>
+          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span><strong style="color:white;">Exonérations possibles de CFE et de taxe foncière</strong>, selon les décisions des collectivités</span></li>
+          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span>Un avantage qui s'ajoute à des <strong style="color:white;">bâtiments neufs à charges maîtrisées</strong></span></li>
+        </ul>
+        <p style="font-size:12px; line-height:1.7; color:rgba(255,255,255,0.55); margin-top:16px; border-top:1px solid rgba(255,255,255,0.15); padding-top:12px;">Sous conditions d'éligibilité — à valider avec votre expert-comptable.</p>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="ey">Trois formules</div>
+      <h2>Acquisition en VEFA, location, <em>projet sur mesure en BEFA</em></h2>
+      <div class="rline"></div>
+      <div class="card-white" style="margin-bottom:12px;">
+        <div class="c-ey">01 — Acheter en VEFA</div>
+        <div class="c-desc" style="font-size:13.5px; line-height:1.7;">Vous achetez votre cellule sur plan et devenez propriétaire de votre outil de travail.</div>
+      </div>
+      <div class="card-white" style="margin-bottom:12px;">
+        <div class="c-ey">02 — Votre projet sur mesure</div>
+        <div class="c-desc" style="font-size:13.5px; line-height:1.7;">Pour un besoin particulier, nous réalisons le bâtiment sur votre cahier des charges, à l'achat comme en location.</div>
+      </div>
+      <div class="card-white">
+        <div class="c-ey">03 — Louer</div>
+        <div class="c-desc" style="font-size:13.5px; line-height:1.7;">Pour préserver votre capacité d'investissement.</div>
+      </div>
+      <p style="font-size:11.5px; color:#999; margin-top:14px; line-height:1.7;">VEFA : vente en l'état futur d'achèvement · BEFA : bail en l'état futur d'achèvement</p>
+    </div>
   </div>
 </section>
 
@@ -592,50 +655,8 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
   </div>
 </section>
 
-<!-- FISCAL & FORMULES -->
-<section id="fiscal" style="background:#fff;">
-  <div style="display:flex; align-items:center; justify-content:flex-end; margin-bottom:8px;"><img width="300" height="249" loading="lazy" decoding="async" src="img/roussillon41-2d8fcd6968.webp" alt="" style="height:44px; width:auto; opacity:0.9;"></div>
-
-  <div class="g2" style="margin-top:0;">
-    <div class="rv">
-      <div class="ey ey-big">Le levier fiscal exceptionnel</div>
-      <h2>Zone France Ruralités <em>Revitalisation</em></h2>
-      <div class="rline"></div>
-      <div style="background:var(--navy); color:white; padding:36px; border-left:4px solid var(--red); border-radius:4px;">
-        <div class="section-badge" style="background:var(--red);">ZFRR</div>
-        <p style="font-size:15px; line-height:1.8; color:rgba(255,255,255,0.9);">Le site est classé en <strong style="color:white;">Zone France Ruralités Revitalisation (ZFRR)</strong>. Les entreprises qui s'y créent ou s'y implantent par reprise jusqu'au 31 décembre 2029 peuvent bénéficier de :</p>
-        <ul class="blist zfrr-list" style="margin-top:14px;">
-          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span><strong style="color:white;">Exonération totale d'impôt sur les bénéfices pendant 5 ans</strong> (impôt sur les sociétés ou sur le revenu)</span></li>
-          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span><strong style="color:white;">Sortie progressive sur 3 ans</strong> : exonération de 75&nbsp;%, puis 50&nbsp;%, puis 25&nbsp;%</span></li>
-          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span><strong style="color:white;">Exonérations possibles de CFE et de taxe foncière</strong>, selon les décisions des collectivités</span></li>
-          <li style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.12);"><span>Un avantage qui s'ajoute à des <strong style="color:white;">bâtiments neufs à charges maîtrisées</strong></span></li>
-        </ul>
-        <p style="font-size:12px; line-height:1.7; color:rgba(255,255,255,0.55); margin-top:16px; border-top:1px solid rgba(255,255,255,0.15); padding-top:12px;">Sous conditions d'éligibilité — à valider avec votre expert-comptable.</p>
-      </div>
-    </div>
-    <div class="rv">
-      <div class="ey">Trois formules</div>
-      <h2>Acquisition en VEFA, location, <em>projet sur mesure en BEFA</em></h2>
-      <div class="rline"></div>
-      <div class="card-white" style="margin-bottom:12px;">
-        <div class="c-ey">01 — Acheter en VEFA</div>
-        <div class="c-desc" style="font-size:13.5px; line-height:1.7;">Vous achetez votre cellule sur plan et devenez propriétaire de votre outil de travail.</div>
-      </div>
-      <div class="card-white" style="margin-bottom:12px;">
-        <div class="c-ey">02 — Votre projet sur mesure</div>
-        <div class="c-desc" style="font-size:13.5px; line-height:1.7;">Pour un besoin particulier, nous réalisons le bâtiment sur votre cahier des charges, à l'achat comme en location.</div>
-      </div>
-      <div class="card-white">
-        <div class="c-ey">03 — Louer</div>
-        <div class="c-desc" style="font-size:13.5px; line-height:1.7;">Pour préserver votre capacité d'investissement.</div>
-      </div>
-      <p style="font-size:11.5px; color:#999; margin-top:14px; line-height:1.7;">VEFA : vente en l'état futur d'achèvement · BEFA : bail en l'état futur d'achèvement</p>
-    </div>
-  </div>
-</section>
-
 <!-- BASSIN D'EMPLOIS -->
-<section id="bassin" style="background:var(--sand2);">
+<section id="bassin" style="background:#fff;">
   <div style="display:flex; align-items:center; justify-content:flex-end; margin-bottom:8px;"><img width="300" height="249" loading="lazy" decoding="async" src="img/roussillon41-2d8fcd6968.webp" alt="" style="height:44px; width:auto; opacity:0.9;"></div>
 
   <div class="g2" style="margin-top:0; align-items:center;">
