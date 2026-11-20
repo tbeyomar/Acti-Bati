@@ -339,6 +339,44 @@ section.vitrine::after{content:"";position:absolute;inset:0;z-index:1;pointer-ev
   .vitrine-points span{color:#4a4f5c!important;font-size:10pt}
 }
 </style>
+<style>
+/* Fiches contact */
+.ct-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.ct-card{background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:30px 30px 26px;position:relative;overflow:hidden}
+.ct-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--red),var(--gold))}
+.ct-head{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.ct-mono{flex:none;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:28px;color:var(--gold);border:1.5px solid var(--gold);background:rgba(245,175,60,.08)}
+.ct-name{font-family:var(--serif);font-size:30px;line-height:1;color:#fff}
+.ct-role{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:8px}
+.ct-line{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid rgba(255,255,255,.1);color:#fff;text-decoration:none;font-size:16px;font-weight:600}
+.ct-line svg{flex:none;color:var(--gold)}
+.ct-line:hover{color:var(--gold)}
+.ct-actions{display:flex;gap:10px;margin-top:18px}
+.ct-a{flex:1;text-align:center;padding:13px 10px;border-radius:40px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.ct-a-call{background:var(--red);color:#fff}
+.ct-a-call:hover{background:var(--red2)}
+.ct-a-mail{border:1px solid rgba(255,255,255,.35);color:#fff}
+.ct-a-mail:hover{border-color:var(--gold);color:var(--gold)}
+@media (max-width:768px){
+  .ct-cards{grid-template-columns:1fr;gap:16px;margin-top:28px}
+  .ct-card{padding:24px 20px 20px}
+  .ct-name{font-size:26px}
+  .ct-line{font-size:15px;word-break:break-all}
+}
+@media print{
+  .ct-cards{grid-template-columns:1fr 1fr!important;gap:14px!important;margin-top:16px!important}
+  .ct-card{background:#fff!important;border:1px solid var(--border)!important;border-radius:6px;padding:14px 18px!important;break-inside:avoid}
+  .ct-card::before{background:var(--red)!important}
+  .ct-mono{width:40px;height:40px;font-size:18pt;color:var(--red)!important;border-color:var(--red)!important;background:none!important}
+  .ct-name{color:var(--navy)!important;font-size:20pt}
+  .ct-role{color:var(--muted)!important}
+  .ct-head{margin-bottom:10px}
+  .ct-line{color:var(--navy)!important;border-color:var(--border)!important;font-size:12pt;padding:6px 0}
+  .ct-line svg{color:var(--red)!important}
+  .ct-actions{display:none!important}
+  .ct-info{margin-top:14px!important}
+}
+</style>
 <link rel="stylesheet" href="../assets/plaquette.css">
 <link rel="stylesheet" href="../assets/print.css">
 </head>
@@ -865,15 +903,24 @@ function closeMenu(){document.getElementById('mobMenu').classList.remove('open')
     <div class="ey" style="color:rgba(255,255,255,0.5);">Prise de contact</div>
     <h2 style="color:white;">Le Parc Roussillon S41, développé, réalisé et livré par <em>ACTI BATI</em></h2>
     <div class="rline"></div>
-    <div class="g2" style="margin-top:48px; gap:48px;">
+    <div class="ct-cards">
+      <div class="ct-card">
+        <div class="ct-head"><span class="ct-mono">T</span><div><div class="ct-name">Tarik</div><div class="ct-role">Votre contact</div></div></div>
+        <a class="ct-line" href="tel:+33624980642"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>06 24 98 06 42</span></a>
+        <a class="ct-line" href="mailto:t.beyomar@actibati-sud.fr?subject=Roussillon%20S41%20-%20Demande%20d'information"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>t.beyomar@actibati-sud.fr</span></a>
+        <div class="ct-actions"><a class="ct-a ct-a-call" href="tel:+33624980642">Appeler</a><a class="ct-a ct-a-mail" href="mailto:t.beyomar@actibati-sud.fr?subject=Roussillon%20S41%20-%20Demande%20d'information">Écrire</a></div>
+      </div>
+      <div class="ct-card">
+        <div class="ct-head"><span class="ct-mono">R</span><div><div class="ct-name">René</div><div class="ct-role">Votre contact</div></div></div>
+        <a class="ct-line" href="tel:+33607822543"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>06 07 82 25 43</span></a>
+        <a class="ct-line" href="mailto:brhi@bhi.fr?subject=Roussillon%20S41%20-%20Demande%20d'information"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><span>brhi@bhi.fr</span></a>
+        <div class="ct-actions"><a class="ct-a ct-a-call" href="tel:+33607822543">Appeler</a><a class="ct-a ct-a-mail" href="mailto:brhi@bhi.fr?subject=Roussillon%20S41%20-%20Demande%20d'information">Écrire</a></div>
+      </div>
+    </div>
+    <div class="g2 ct-info" style="margin-top:48px; gap:48px;">
       <div>
-        <p class="desc" style="color:rgba(255,255,255,0.75); font-size:14px; line-height:1.8; margin-bottom:18px;">ACTI BATI conçoit et réalise des parcs d'immobilier d'entreprise dans le sud de la France. Nous maîtrisons la chaîne complète — foncier, programmation, autorisations, travaux, livraison.</p>
-        <ul class="blist" style="margin-top:12px;">
-          <li style="color:rgba(255,255,255,0.7); border-color:rgba(255,255,255,0.1);">ACTI BATI — 7 rue Auguste, 30000 Nîmes</li>
-          <li style="color:rgba(255,255,255,0.7); border-color:rgba(255,255,255,0.1);">Tél. : <a href="tel:+33624980642" style="color:white; font-weight:700; text-decoration:none;">06 24 98 06 42</a> &nbsp;·&nbsp; <a href="tel:+33607822543" style="color:white; font-weight:700; text-decoration:none;">06 07 82 25 43</a></li>
-          <li style="color:rgba(255,255,255,0.7); border-color:rgba(255,255,255,0.1);">Email : <a href="mailto:t.beyomar@actibati-sud.fr" style="color:white; font-weight:700; text-decoration:none;">t.beyomar@actibati-sud.fr</a> &nbsp;·&nbsp; <a href="mailto:brhi@bhi.fr" style="color:white; font-weight:700; text-decoration:none;">brhi@bhi.fr</a></li>
-        </ul>
-        <a href="mailto:t.beyomar@actibati-sud.fr,brhi@bhi.fr?subject=Roussillon%20S41%20-%20Demande%20d'information" class="ct-btn" style="margin-top:28px;">Demander une information</a>
+        <p class="desc" style="color:rgba(255,255,255,0.75); font-size:14px; line-height:1.8;">ACTI BATI conçoit et réalise des parcs d'immobilier d'entreprise dans le sud de la France. Nous maîtrisons la chaîne complète — foncier, programmation, autorisations, travaux, livraison.</p>
+        <p class="desc" style="color:rgba(255,255,255,0.65); font-size:13.5px; margin-top:10px;">ACTI BATI — 7 rue Auguste, 30000 Nîmes</p>
       </div>
       <div>
         <p class="desc" style="color:rgba(255,255,255,0.65); font-size:13.5px; line-height:1.9;">
